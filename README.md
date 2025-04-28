@@ -1,4 +1,4 @@
-# MNayaReservaHotel 🏨 — Sistema de Gestión de Reservas de Hotel en C#
+# MNayaReservaHotel 🏨 — Aplicación de Gestión de Reservas en C# Windows Forms
 
 Aplicación de gestión de reservas de hotel desarrollada en **C#** con **Windows Forms** y conexión a **MySQL**.
 
@@ -35,7 +35,7 @@ Para importar la base de datos:
 - Visual Studio 2022 o superior
 - .NET Framework clásico 4.7.2
 - Base de datos MySQL (puedes usar [XAMPP](https://www.apachefriends.org/es/index.html) o similar localmente)
-- Si no se configura el appsettings.json con datos de conexión a servidor solo se podrá utilizar como base de datos local.
+- Si no se configura correctamente appsettings.json, la aplicación buscará la base de datos en el servidor local (localhost).
 
 ---
 
@@ -46,7 +46,10 @@ Para importar la base de datos:
    ```bash
    git clone https://github.com/MarioNaya/MNayaReservaHotel.git
    ```
+   cd MNayaReservaHotel
 
+2. Abre el archivo .sln con Visual Studio y compila el proyecto
+   
 ## 📂 Estructura del proyecto
 
 ```
