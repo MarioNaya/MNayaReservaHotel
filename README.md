@@ -45,7 +45,9 @@ Para importar la base de datos:
    git clone https://github.com/MarioNaya/MNayaReservaHotel.git
 
 ## 📂 Estructura del proyecto
+## 📂 Estructura del proyecto
 
+```
 ├── Config/               # Configuración general
 │   └── Configuracion.cs
 │   └── App.config
@@ -97,4 +99,4 @@ Para importar la base de datos:
 ├── MNayaReservaHotel.csproj
 ├── Program.cs
 └── README.md
-
+```
