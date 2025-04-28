@@ -1,4 +1,4 @@
-# MNayaReservaHotel 🏨
+# MNayaReservaHotel 🏨 — Sistema de Gestión de Reservas de Hotel en C#
 
 Aplicación de gestión de reservas de hotel desarrollada en **C#** con **Windows Forms** y conexión a **MySQL**.
 
@@ -26,14 +26,16 @@ Para importar la base de datos:
 1. Abrir phpMyAdmin o tu herramienta de MySQL.
 2. Crear una nueva base de datos (por ejemplo, `reservas_hotel`).
 3. Importar el archivo `init.sql` en la base de datos creada.
+4. Copia appsettings.example.json a appsettings.json y edita la cadena de conexión
 
 ---
 
 ## ⚙️ Requisitos
 
 - Visual Studio 2022 o superior
-- .NET Framework o .NET 6/7 (dependiendo de la configuración de tu proyecto)
+- .NET Framework clásico 4.7.2
 - Base de datos MySQL (puedes usar [XAMPP](https://www.apachefriends.org/es/index.html) o similar localmente)
+- Si no se configura el appsettings.json con datos de conexión a servidor solo se podrá utilizar como base de datos local.
 
 ---
 
@@ -43,6 +45,7 @@ Para importar la base de datos:
 
    ```bash
    git clone https://github.com/MarioNaya/MNayaReservaHotel.git
+   ```
 
 ## 📂 Estructura del proyecto
 
@@ -82,20 +85,23 @@ Para importar la base de datos:
 │   ├── Common/           # Formularios que se repiten
 │   │   └── Login.cs
 │   │   └── Principal.cs
-│   ├── Clientes/
+│   ├── ReservaSalon/
 │   │   └── ReservaSalones.cs
+│   ├── ReservaHabitacion/
 │   │   └── ReservaHabitaciones.cs
 │   ├── Empleados/
 │   │   └── AltaEmpleado.cs
+│   ├── TablaEmpleados/
 │   │   └── VerEmpleados.cs
-│   ├── Salones/
+│   ├── TablaSalones/
 │   │   └── VerReservasSalones.cs
-│   │   └── VerReservasSalones.Designer.cs
-│   │   └── VerReservasSalones.resx
-│   └── Habitaciones/
+│   └── TablaHabitaciones/
 │       └── VerReservasHabitaciones.cs
 │
 ├── MNayaReservaHotel.csproj
 ├── Program.cs
 └── README.md
 ```
+
+![Lenguaje](https://img.shields.io/badge/Hecho%20en-C%23-blue)
+![Base de datos](https://img.shields.io/badge/Base%20de%20Datos-MySQL-orange)
