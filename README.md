@@ -45,7 +45,6 @@ Para importar la base de datos:
    git clone https://github.com/MarioNaya/MNayaReservaHotel.git
 
 ## 📂 Estructura del proyecto
-## 📂 Estructura del proyecto
 
 ```
 ├── Config/               # Configuración general
