@@ -43,12 +43,11 @@ Para importar la base de datos:
 
 1. **Clona el repositorio:**
 
+   git clone 
    ```bash
-   git clone https://github.com/MarioNaya/MNayaReservaHotel.git
+   https://github.com/MarioNaya/MNayaReservaHotel.git
    ```
-   ```bash
-   cd MNayaReservaHotel
-   ```
+
 2. Abre el archivo .sln con Visual Studio y compila el proyecto
    
 ## 📂 Estructura del proyecto
