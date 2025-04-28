@@ -16,16 +16,12 @@ namespace MNayaReservaHotel.bbdd
     internal class ConsultasEmpleado
     {
 
-        private static readonly string url = "Server=145.14.151.1; " +
-            "Database=u812167471_reservas; " +
-            "User=u812167471_reservas; " +
-            "port=3306; " +
-            "password=2025-Reservas; " +
-            "Convert Zero Datetime=true";
+        private static readonly string url = Configuracion.GetConnectionString();
+
 
         public static bool Acceder(string user, string pass)
         {
-            string consulta = "SELECT usuario, contraseña FROM empleados WHERE usuario=?user AND contraseña=?pass";
+            string consulta = "SELECT usuario, pass FROM empleados WHERE usuario=?user AND pass=?pass";
 
             try
             {
@@ -98,7 +94,7 @@ namespace MNayaReservaHotel.bbdd
                 {
                     conn.Open();
 
-                    string consulta = "INSERT INTO empleados (dniEmpleado, nombre, apellidos, telefono, email, fechaContrato, turno, salarioBase, usuario, contraseña) "
+                    string consulta = "INSERT INTO empleados (dniEmpleado, nombre, apellidos, telefono, email, fechaContrato, turno, salarioBase, usuario, pass) "
                         + "VALUES (?dni,?nom,?ape,?tel,?mail,?fecha,?tur,?sal,?user,?pass)";
 
                     using (MySqlCommand cmd = new MySqlCommand(consulta, conn))
